@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const select = document.querySelector('#hospitalId');
+const erroAvaliacao = document.querySelector('#erroAvaliacao');
 
 const preencherSelect = hospitais => {
   hospitais.forEach(hospital => {
@@ -21,6 +22,24 @@ const preencherSelect = hospitais => {
 })();
 
 const validarFormulario = form => {
+  if (form.hospitalId.value.length < 10) {
+    erroAvaliacao.classList.remove('invisible');
+    erroAvaliacao.textContent = 'Hospital inválido';
+    return false;
+  }
+
+  if (form.nota.value < 1 || form.nota.value > 5) {
+    erroAvaliacao.classList.remove('invisible');
+    erroAvaliacao.textContent = 'Nota inválida';
+    return false;
+  }
+
+  if (form.mensagem.value.length < 10) {
+    erroAvaliacao.classList.remove('invisible');
+    erroAvaliacao.textContent = 'Avaliação inválida';
+    return false;
+  }
+
   return true;
 };
 
