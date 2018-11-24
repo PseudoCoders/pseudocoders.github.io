@@ -62,13 +62,14 @@ button.btn.theme-color {
   margin-top: -20%;
 }
 
-.not-selected {
-  color: rgb(180, 180, 180);
-}
-
 .card-link {
   text-decoration: none;
-  color: red;
-  font-size: 44px;
+  color: #0056b3;
+  font-size: 30px;
   font-weight: bold;
+}
+
+.selected {
+  background-color: #0463c9;
+  border-radius: 3%;
 }

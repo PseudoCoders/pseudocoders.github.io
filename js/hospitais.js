@@ -33,7 +33,7 @@ const criarAvaliacao = avaliacao => {
   const a = document.createElement('a');
   a.classList.add('card-link');
   a.setAttribute('href', '#');
-  a.textContent = '*'.repeat(avaliacao.nota);
+  a.textContent = '★'.repeat(avaliacao.nota);
 
   divCardBody.appendChild(a);
 
