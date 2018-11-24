@@ -1,6 +1,19 @@
 const form = document.querySelector('form');
+const erroLogin = document.querySelector('#erroLogin');
 
 const validarLogin = form => {
+    if (form.email.value.length < 7) {
+        erroLogin.classList.remove('invisible');
+        erroLogin.textContent = 'Email inválido';
+        return false;
+    }
+
+    if (form.senha.value.length < 6) {
+        erroLogin.classList.remove('invisible');
+        erroLogin.textContent = 'Senha inválida';
+        return false;
+    }
+
     return true;
 };
 

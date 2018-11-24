@@ -60,3 +60,7 @@ i.far.fa-arrow-alt-circle-left {
 button.btn.theme-color {
   margin-top: -20%;
 }
+
+.not-selected {
+  color: rgb(180, 180, 180);
+}

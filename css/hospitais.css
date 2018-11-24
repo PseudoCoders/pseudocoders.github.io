@@ -55,3 +55,7 @@ footer {
   margin-left: 75vw;
   margin-top: 68vh;
 }
+
+.not-selected {
+  color: rgb(180, 180, 180);
+}
