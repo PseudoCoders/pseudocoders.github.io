@@ -1,5 +1,5 @@
 body{
-    background-image: url('/Users/lucas/Projetos/_HACKATON/Nosso Hospital/imagens/fundo.jpg');
+    background-image: url('../imagens/fundo.jpg');
     color: white;
     font-family: 'Roboto', sans-serif;
 }
