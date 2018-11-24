@@ -1,5 +1,6 @@
 body {
   background-color: #F5F5F5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -58,4 +59,11 @@ footer {
 
 .not-selected {
   color: rgb(180, 180, 180);
+}
+
+.card-link {
+  text-decoration: none;
+  color: red;
+  font-size: 44px;
+  font-weight: bold;
 }
