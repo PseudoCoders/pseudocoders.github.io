@@ -43,7 +43,6 @@ const criarAvaliacao = avaliacao => {
   axios.get('https://nossohospital.herokuapp.com/avaliacoes')
     .then(response => {
       const avaliacoes = response.data;
-      console.log(avaliacoes);
 
       avaliacoes.forEach(avaliacao => criarAvaliacao(avaliacao));
     })
