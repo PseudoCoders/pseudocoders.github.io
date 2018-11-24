@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +20,6 @@
 
 <body>
 
-    <!-- Cabeçalho -->
     <div class="container d-flex justify-content-center">
         <div class="">
             <nav>
@@ -32,55 +30,41 @@
                 </ul>
             </nav>
 
-            <!-- Formulário de login-->
-
             <div class="row align-items-center">
 
                 <div>
                     <form>
-
                         <div class="form-group" id="emailHelp">
-                            <label for="exampleInputEmail1">Insira seu login</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="pseudocoders">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                             <small id="emailHelp" class="form-text text-muted">Em caso de urgência clique no botão
                                 Emergência.</small>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Insira sua senha:</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" name="senha" id="senha">
                         </div>
+                        <button type="submit" class="btn btn-success">Entrar</button>
                     </form>
                     <div>
-                        <a href="registrar.html">
-                            <button class="btn btn-primary">Registrar</button>
-                        </a>
-                        <button type="submit" class="btn btn-success">Entrar</button>
                         <div class="botaoEmergencia">
                             <button type="submit" class="btn btn-danger">Emergência</button>
                         </div>
                     </div>
                 </div>
 
-
-
             </div>
         </div>
     </div>
 
-    <!-- Rodapé -->
     <footer class="page-footer font-small blue">
-
-        <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
             < /> PseudoCoders
         </div>
-        <!-- Copyright -->
-
     </footer>
-    <!-- Rodapé -->
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/cookies.js"></script>
 </body>
-
 </html>
