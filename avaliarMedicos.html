@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Avaliar hospital</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/avaliarMedicos.css">
+</head>
+<body>
+  <header>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="medicos.html">
+          <i class="far fa-arrow-alt-circle-left"></i>
+        </a>
+    </ul>
+  </header>
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="hospitalId">Médico</label>
+        <select class="form-control" id="hospitalId" name="hospitalId">
+          <option selected>Selecione...</option>
+          <option value="1">José Garcia</option>
+          <option value="2">Alexandre Gonçalves</option>
+          <option value="3">Fabiana Pereira</option>
+        </select>
+      </div>
+
+      <label>Nota: </label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="nota" id="nota1" value="1">
+        <label class="form-check-label" for="nota1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="nota" id="nota2" value="2">
+        <label class="form-check-label" for="nota2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="nota" id="nota3" value="3">
+        <label class="form-check-label" for="nota3">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="nota" id="nota4" value="4">
+        <label class="form-check-label" for="nota4">4</label>
+      </div>
+      <div class="form-check form-check-inline mb-2">
+        <input class="form-check-input" type="radio" name="nota" id="nota5" value="5">
+        <label class="form-check-label" for="nota5">5</label>
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Avaliação</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+  </footer>
+  
+  <script src="js/validarCookies.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/avaliarMedicos.js"></script>
+</body>
+</html>
