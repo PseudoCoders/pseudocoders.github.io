@@ -13,9 +13,6 @@
     <!-- Arquivo CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Arquivo JS -->
-    <script src="./js/script.js"></script>
-
     <!-- Fonte do Google -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -38,32 +35,36 @@
             <!-- Formulário de login-->
 
             <div class="row align-items-center">
+                <div>
+                    <form>
+                        <div class="form-group">
+                            <label for="nomeDeUsuario">Insira seu nome:</label>
+                            <input type="text" class="form-control" id="nomeDeUsuario" placeholder="PseudoCoders">
+                        </div>
+                        <div class="form-group" id="emailHelp">
+                            <label for="exampleInputEmail1">Insira seu nome de usuário:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="pseudocoders">
+                            <small id="emailHelp" class="form-text text-muted">Em caso de urgência clique no botão
+                                Emergência.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Insira sua senha:</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                        </div>
+                        <div class="form-group">
+                            <label for="dataNascimento">Insira sua data de nascimento:</label>
+                            <input type="text" class="form-control" id="outra_data" placeholder="DD/MM/AAAA" maxlength="10"
+                                onkeypress="mascaraData( this, event )" />
+                        </div>
 
-                <form>
-                    <div class="form-group">
-                        <label for="nomeDeUsuario">Insira seu nome:</label>
-                        <input type="text" class="form-control" id="nomeDeUsuario" placeholder="PseudoCoders">
+                    </form>
+                    <div>
+                        <a href="./login.html">
+                            <button type="submit" class="btn btn-success" id="botaoRegistrar">Registrar</button>
+                        </a>
                     </div>
-                    <div class="form-group" id="emailHelp">
-                        <label for="exampleInputEmail1">Insira seu nome de usuário:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="pseudocoders">
-                        <small id="emailHelp" class="form-text text-muted">Em caso de urgência clique no botão
-                            Emergência.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Insira sua senha:</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
-                    </div>
-                    <div class="form-group">
-                        <label for="dataNascimento">Insira sua data de nascimento:</label>
-                        <input type="text" class="form-control" id="outra_data" placeholder="DD/MM/AAAA" maxlength="10"
-                            onkeypress="mascaraData( this, event )" />
-                    </div>
-                    <a href="./login.html">
-                        <button type="submit" class="btn btn-success" id="botaoRegistrar">Registrar</button>
-                    </a>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -81,5 +82,8 @@
     <!-- Rodapé -->
 
 </body>
+
+<!-- Arquivo JS -->
+<script src="./js/script.js"></script>
 
 </html>
