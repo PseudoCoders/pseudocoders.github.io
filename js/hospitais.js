@@ -11,7 +11,7 @@ const criarAvaliacao = avaliacao => {
 
   const h5 = document.createElement('h5');
   h5.classList.add('card-title');
-  h5.textContent = 'Nome do hospital';
+  h5.textContent = avaliacao.hospital.nome;
 
   divCardBody.appendChild(h5);
 
@@ -19,12 +19,13 @@ const criarAvaliacao = avaliacao => {
   h6.classList.add('card-subtitle');
   h6.classList.add('mb-2');
   h6.classList.add('text-muted');
-  h6.textContent = 'Cidade';
+  h6.textContent = avaliacao.hospital.tipo;
 
   divCardBody.appendChild(h6);
 
   const pCardText = document.createElement('p');
   pCardText.classList.add('card-text');
+  pCardText.classList.add('mb-1');
   pCardText.textContent = avaliacao.mensagem;
 
   divCardBody.appendChild(pCardText);
