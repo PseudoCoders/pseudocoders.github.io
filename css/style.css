@@ -1,5 +1,6 @@
 body{
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    background-image: url('../imagens/fundo.jpg');
     color: black;
     font-family: 'Roboto', sans-serif;
 }
