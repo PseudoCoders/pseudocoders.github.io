@@ -65,3 +65,10 @@ button.btn.theme-color {
 .not-selected {
   color: rgb(180, 180, 180);
 }
+
+.card-link {
+  text-decoration: none;
+  color: red;
+  font-size: 44px;
+  font-weight: bold;
+}
