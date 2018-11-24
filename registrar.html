@@ -7,83 +7,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Arquivo CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/registrar.css">
 
     <!-- Fonte do Google -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <title>Registrar</title>
+    <title>Cadastro - Nosso Hospital</title>
 </head>
-
 <body>
-
     <!-- Cabeçalho -->
     <div class="container d-flex justify-content-center">
         <div class="">
             <nav>
                 <ul class="nav justify-content-center">
                     <li>
-                        <h1>Nosso Hospital</h1>
+                        <h1>Registre-se</h1>
                     </li>
                 </ul>
             </nav>
 
-            <!-- Formulário de login-->
-
             <div class="row align-items-center">
                 <div>
+                    <div id="erroCadastro" class="alert alert-danger invisible" role="alert">
+                    </div>
                     <form>
                         <div class="form-group">
-                            <label for="nomeDeUsuario">Insira seu nome:</label>
-                            <input type="text" class="form-control" id="nomeDeUsuario" placeholder="PseudoCoders">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome">
                         </div>
                         <div class="form-group" id="emailHelp">
-                            <label for="exampleInputEmail1">Insira seu nome de usuário:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="pseudocoders">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email">
                             <small id="emailHelp" class="form-text text-muted">Em caso de urgência clique no botão
                                 Emergência.</small>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Insira sua senha:</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" id="senha" name="senha">
                         </div>
-                        <div class="form-group">
-                            <label for="dataNascimento">Insira sua data de nascimento:</label>
-                            <input type="text" class="form-control" id="outra_data" placeholder="DD/MM/AAAA" maxlength="10"
-                                onkeypress="mascaraData( this, event )" />
-                        </div>
-
+                        <button type="submit" class="btn btn-success" id="botaoRegistrar">Enviar</button>
                     </form>
-                    <div>
-                        <a href="./login.html">
-                            <button type="submit" class="btn btn-success" id="botaoRegistrar">Registrar</button>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Rodapé -->
     <footer class="page-footer font-small blue">
-
-        <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
             < /> PseudoCoders
         </div>
-        <!-- Copyright -->
-
     </footer>
-    <!-- Rodapé -->
 
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/registrar.js"></script>
 </body>
-
-<!-- Arquivo JS -->
-<script src="./js/script.js"></script>
-
 </html>

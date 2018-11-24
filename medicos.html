@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Médicos - Feed</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/medicos.css">
+</head>
+<body>
+  <header>
+    <ul class="nav">
+      <li class="nav-item" id="logout">
+        <a class="nav-link active">
+          <i class="far fa-arrow-alt-circle-left"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hospitais.html">Hospitais</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="medicos.html">Médicos</a>
+      </li>
+    </ul>
+  </header>
+  
+  <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">José Garcia</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Hospital Moacyr do Carmo</h6>
+          <p class="card-text mb-1">Médico atencioso, atendeu com calma e profissionalismo.</p>
+          <a href="#" class="card-link">5</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Alexandre Silva</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Hospital Moacyr do Carmo</h6>
+          <p class="card-text mb-1">Não gostei do atendimento, médico com pressa de ir embora 
+            e acabou realizando um mal diagnostico.</p>
+          <a href="#" class="card-link">2</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Fabiana Pereira</h5>
+          <h6 class="card-subtitle mb-2 text-muted">USF DOIS IRMAOS</h6>
+          <p class="card-text mb-1">Boa médica, bastante dedicada e atenciosa mas 
+            infelizmente parece não ter muita experiência, deixou a desejar.</p>
+          <a href="#" class="card-link">4</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Marcia Gonçalves</h5>
+          <h6 class="card-subtitle mb-2 text-muted">ESF TREVO DAS MISSOES II</h6>
+          <p class="card-text mb-1">Péssimo atendimento, praticamente me expulsou do consultório,
+            com um péssimo diagnostico.</p>
+          <a href="#" class="card-link">1</a>
+        </div>
+      </div>
+
+    <button type="button" class="btn theme-color">
+      <a href="avaliarMedicos.html"><i class="fas fa-edit"></i></a>
+    </button>
+  </div>
+
+  <footer>
+  </footer>
+
+  <script src="js/validarCookies.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/medicos.js"></script>
+  <script src="js/cookies.js"></script>
+</body>
+</html>
