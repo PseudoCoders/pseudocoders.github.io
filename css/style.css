@@ -69,3 +69,7 @@ footer {
     background-color: #1668B2;
     
 }
+
+.invisible {
+    display: none;
+}
