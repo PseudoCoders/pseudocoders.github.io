@@ -1,29 +1,40 @@
 body{
     /* background-color: #f5f5f5; */
-    background-image: url('../imagens/fundo.jpg');
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    background-image: url('../imagens/fundo2.jpg');
+    background-size: 500px;
+    color:white;
+    
 }
 
+input#email {
+    opacity: 0.7;
+}
+
+input#senha {
+    opacity: 0.7;
+}
 header {
     width: 100vw;
     height: 70px;
-    background-color: #1668B2;
     margin-bottom: 1.8vh;
     text-align: center;
 }
 h1{
-   padding-top: 3%;
+   padding-top: 11%;
    color: white;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
 }
 
 .container{
     height: 508px;
+    padding-right: 0px !important;
 }
 
 .botoes{
     padding-top: 10%;
     margin-top: 25%;
+    margin-left: 1%;
     border-radius: 10%;
 }
 
@@ -49,7 +60,7 @@ button.btn.btn-primary {
 
 
 .container.d-flex.justify-content-center {
-    margin-top: 2%;
+    margin-top: 13%;
 }
 
 div#emailHelp {
@@ -63,12 +74,6 @@ ul.nav.justify-content-center {
 #botaoRegistrar {
     width: 40%;
     margin-left: 30%;
-}
-footer {
-    width: 100vw;
-    height: 50px;
-    background-color: #1668B2;
-    
 }
 
 .invisible {
