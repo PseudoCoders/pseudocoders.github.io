@@ -1,0 +1,50 @@
+body {
+  background-color: #F5F5F5;
+}
+
+header {
+  width: 100vw;
+  height: 70px;
+  background-color: #1668B2;
+  margin-bottom: 1.8vh;
+}
+
+.container {
+  width: auto;
+}
+
+.nav {
+  margin-left: 8vw;
+  padding-top: 3vh;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  margin-bottom: 1.8vh;
+  width: 90vw;
+}
+
+footer {
+  width: 100vw;
+  height: 50px;
+  background-color: #1668B2;
+}
+
+.theme-color {
+  background-color: #1668B2;
+  color: white;
+}
+
+.btn.theme-color {
+  border-radius: 50%;
+  padding: 18px 18px 19px 22px;
+  position: fixed;
+  z-index: 1;
+  margin-left: 75vw;
+  margin-top: 68vh;
+}
