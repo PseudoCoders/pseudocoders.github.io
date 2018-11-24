@@ -1,0 +1,43 @@
+body{
+    background-image: url('/Users/lucas/Projetos/_HACKATON/Nosso Hospital/imagens/fundo.jpg');
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botaoEmergencia{
+    padding-top: 10%;
+    margin-left: 30%;
+    margin-top: 20%;
+    border-radius: 10%;
+}
+
+button.btn.btn-success{
+    width: 40%;
+    margin-left: 18%;
+}
+
+button.btn.btn-primary{
+    width: 40%;
+}
+
+
+.page-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+
+.container.d-flex.justify-content-center {
+    margin-top: 2%;
+}
+
+div#emailHelp {
+    margin-top: 10%;
+}
+
+ul.nav.justify-content-center {
+    margin-top: 10%;
+}
+
+
