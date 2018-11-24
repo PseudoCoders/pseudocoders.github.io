@@ -12,7 +12,7 @@ header {
 
 .container {
   width: auto;
-  height: 443px;
+  height: 495px;
 }
 
 .nav {
@@ -34,13 +34,36 @@ footer {
 
 form {
   margin-bottom: 1.8vh;
-  margin-top: 6vh;
+  margin-top: 5vh;
 }
 
 h1 {
-  color: #1668B2;
+  color: #0056b3;
   font-size: 28px;
   text-align: center;
   margin-bottom: 2vh;
   margin-top: 4vh;
+}
+
+select {
+  margin-bottom: 3vh;
+}
+
+.label-textarea {
+  margin-top: 4vh;
+}
+
+.label-nota {
+  margin-top: 3vh;
+}
+
+.center {
+  margin-left: 34vw;
+  margin-top: 3vh;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 2vh;
+  margin-right: 1vw;
 }
