@@ -1,3 +1,24 @@
 .invisible {
   display: none;
 }
+
+h1{
+  color: white !important;
+}
+
+header {
+  width: 100vw;
+  height: 70px;
+  background-color: #1668B2;
+  margin-bottom: 1.8vh;
+  text-align: center;
+  margin-top: -10px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.row.align-items-center {
+  margin-left: 30px;
+}
