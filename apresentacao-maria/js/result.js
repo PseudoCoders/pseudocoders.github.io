@@ -4,9 +4,7 @@ const criminalIntentText = document.querySelector('.criminalIntent');
 const categoriesText = document.querySelector('.categories');
 
 function parseEmotions(emotions) {
-  const found = emotions.reduce(emotion => emotion + ' ', '');
-
-  return `Emoções encontradas: ${found}`;
+  return `Emoções encontradas: ${emotions.join(', ')}`;
 }
 
 function parseCriminalIntent(criminalIntent) {
