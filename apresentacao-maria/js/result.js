@@ -20,6 +20,6 @@ function parseCriminalIntent(criminalIntent) {
   const res = response.data;
 
   cardText.textContent = res.tweet;
-  emotionsText = parseEmotions(res.result.emotions);
-  criminalIntentText = parseCriminalIntent(res.result.hasCriminalIntent);
+  emotionsText.textContent = parseEmotions(res.result.emotions);
+  criminalIntentText.textContent = parseCriminalIntent(res.result.hasCriminalIntent);
 })();
