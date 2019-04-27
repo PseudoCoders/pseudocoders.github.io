@@ -1,0 +1,86 @@
+body{
+    /* background-color: #f5f5f5; */
+    background-image: url('../imagens/fundo2.jpg');
+    background-size: 500px;
+    color:white;
+    
+}
+
+input#email {
+    opacity: 0.7;
+}
+
+input#senha {
+    opacity: 0.7;
+}
+header {
+    width: 100vw;
+    height: 70px;
+    margin-bottom: 1.8vh;
+    text-align: center;
+}
+h1{
+   padding-top: 11%;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+}
+
+.container{
+    height: 508px;
+    padding-right: 0px !important;
+}
+
+.botoes{
+    padding-top: 10%;
+    margin-top: 25%;
+    margin-left: 1%;
+    border-radius: 10%;
+}
+
+button.btn.btn-success{
+    width: 40%;
+    margin-left: 30%;
+}
+
+button.btn.btn-primary{
+    width: 40%;
+}
+
+button.btn.btn-primary {
+    margin-left: 19%;
+}
+
+
+.page-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+
+.container.d-flex.justify-content-center {
+    margin-top: 13%;
+}
+
+div#emailHelp {
+    margin-top: 10%;
+}
+
+ul.nav.justify-content-center {
+    margin-top: 10%;
+}
+
+#botaoRegistrar {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.invisible {
+    display: none;
+}
+
+div#erroLogin{
+    margin-top: 40px;
+    margin-bottom: -60px;
+}

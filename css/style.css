@@ -1,86 +1,104 @@
-body{
-    /* background-color: #f5f5f5; */
-    background-image: url('../imagens/fundo2.jpg');
-    background-size: 500px;
-    color:white;
-    
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-input#email {
-    opacity: 0.7;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-input#senha {
-    opacity: 0.7;
-}
-header {
-    width: 100vw;
-    height: 70px;
-    margin-bottom: 1.8vh;
-    text-align: center;
-}
-h1{
-   padding-top: 11%;
-   color: white;
-   font-family: 'Poppins', sans-serif;
-   text-align: center;
+#notfound {
+  position: relative;
+  height: 100vh;
+  background: #030005;
 }
 
-.container{
-    height: 508px;
-    padding-right: 0px !important;
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.botoes{
-    padding-top: 10%;
-    margin-top: 25%;
-    margin-left: 1%;
-    border-radius: 10%;
+.notfound {
+  max-width: 767px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
 }
 
-button.btn.btn-success{
-    width: 40%;
-    margin-left: 30%;
+.notfound .notfound-404 {
+  position: relative;
+  height: 20%;
+  margin-bottom: 20px;
+  z-index: -1;
 }
 
-button.btn.btn-primary{
-    width: 40%;
-}
-
-button.btn.btn-primary {
-    margin-left: 19%;
-}
-
-
-.page-footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
+.notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% , -50%);
+      -ms-transform: translate(-50% , -50%);
+          transform: translate(-50% , -50%);
+  font-size: 224px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -12px;
+  color: #030005;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0px #7cd7dd, 1px 1px 0px #92e49f;
+  /* letter-spacing: 20px; */
 }
 
 
-.container.d-flex.justify-content-center {
-    margin-top: 13%;
+.notfound .notfound-404 h2 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px #8400ff;
+  letter-spacing: 13px;
+  margin: 0;
 }
 
-div#emailHelp {
-    margin-top: 10%;
+.notfound a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #00eeff;
+  text-decoration: none;
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
-ul.nav.justify-content-center {
-    margin-top: 10%;
+.notfound a:hover {
+  color: #00ff2a;
 }
 
-#botaoRegistrar {
-    width: 40%;
-    margin-left: 30%;
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h2 {
+        font-size: 10%;
+    }
 }
 
-.invisible {
-    display: none;
-}
-
-div#erroLogin{
-    margin-top: 40px;
-    margin-bottom: -60px;
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+      font-size: 400%;
+  }
 }
