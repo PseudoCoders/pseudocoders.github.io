@@ -2,6 +2,7 @@ const cardText = document.querySelector('.card-text');
 const emotionsText = document.querySelector('.emotions');
 const criminalIntentText = document.querySelector('.criminalIntent');
 const categoriesText = document.querySelector('.categories');
+const sentimentText = document.querySelector('.sentiment');
 
 function parseCriminalCategories(categories) {
 
@@ -25,6 +26,7 @@ function parseCriminalIntent(criminalIntent) {
   cardText.textContent = res.tweet;
   emotionsText.textContent = parseEmotions(res.result.emotions);
   criminalIntentText.textContent = parseCriminalIntent(res.result.hasCriminalIntent);
+  sentimentText.textContent = result.sentiments;
 
   if (res.result.hasCriminalIntent) {
     categoriesText.textContent = parseCriminalCategories(res.result.categories);
