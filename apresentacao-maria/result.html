@@ -9,21 +9,28 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/result.css" />
+  <link rel="stylesheet" href="css/particles.css" />
 </head>
-<body>
-  <div class="card text-white bg-primary mb-3">
+<body id="particles-js">
+  <div class="card text-white mb-3">
     <div class="card-header">Tweet</div>
     <div class="card-body">
       <h5 class="card-title">Anônimo</h5>
-      <p class="card-text" style="font-size:18px"></p>
-      <p class="card-text sentiment" style="font-size:18px"></p>
-      <p class="card-text emotions" style="font-size:18px"></p>
-      <p class="card-text criminalIntent" style="font-size:18px"></p>
-      <p class="card-text categories" style="font-size:18px"></p>
+      <p class="card-text"></p>
+      <p class="card-text sentiment"></p>
+      <p class="card-text emotions"></p>
+      <p class="card-text criminalIntent"></p>
+      <p class="card-text categories"></p>
     </div>
   </div>
 
+  <div class="registry">
+    <button class="verify">Verificar Registros</button>
+  </div>
+
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles.js"></script>
   <script src="js/result.js"></script>
 </body>
 </html>
