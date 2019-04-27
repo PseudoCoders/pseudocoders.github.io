@@ -1,6 +1,3 @@
 const analyzeBtn = document.querySelector('.analyze');
 
-analyzeBtn.addEventListener('click', async() => {
-  const response = await axios.get('https://maria-ia.herokuapp.com/maria');
-  console.log(response.data);
-});
+analyzeBtn.addEventListener('click', window.location.href = 'result.html');
