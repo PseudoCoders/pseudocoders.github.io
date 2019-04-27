@@ -5,7 +5,7 @@ const categoriesText = document.querySelector('.categories');
 const sentimentText = document.querySelector('.sentiment');
 
 function parseCriminalCategories(categories) {
-  return `Intenções criminais encontradas: ${categories.join(', ')}`;
+  return `Intenções criminosas encontradas: ${categories.join(', ')}`;
 }
 
 function parseEmotions(emotions) {
