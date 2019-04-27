@@ -33,6 +33,6 @@ function parseSentiment(sentiment) {
   sentimentText.textContent = parseSentiment(res.result.sentiments);
 
   if (res.result.hasCriminalIntent) {
-    categoriesText.textContent = parseCriminalCategories(res.result.categories);
+    categoriesText.textContent = parseCriminalCategories(res.result.criminalCategories);
   }
 })();
