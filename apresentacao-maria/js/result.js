@@ -15,7 +15,7 @@ function parseEmotions(emotions) {
 function parseCriminalIntent(criminalIntent) {
   return criminalIntent ?
     'Possui intenção criminosa' :
-    'Não possui intenção criminosa';
+    '';
 }
 
 function parseSentiment(sentiment) {
