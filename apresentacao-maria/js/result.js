@@ -18,6 +18,10 @@ function parseCriminalIntent(criminalIntent) {
     'Não possui intenção criminosa';
 }
 
+function parseSentiment(sentiment) {
+  return sentiment ? `Tweet contém: ${sentiment}` : '';
+}
+
 (async() => {
   const response = await axios.get('https://maria-ia.herokuapp.com/maria');
   const res = response.data;
@@ -26,7 +30,7 @@ function parseCriminalIntent(criminalIntent) {
   cardText.textContent = res.tweet;
   emotionsText.textContent = parseEmotions(res.result.emotions);
   criminalIntentText.textContent = parseCriminalIntent(res.result.hasCriminalIntent);
-  sentimentText.textContent = res.result.sentiments;
+  sentimentText.textContent = parseSentiment(res.result.sentiments);
 
   if (res.result.hasCriminalIntent) {
     categoriesText.textContent = parseCriminalCategories(res.result.categories);
