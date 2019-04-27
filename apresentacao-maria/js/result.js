@@ -26,7 +26,7 @@ function parseCriminalIntent(criminalIntent) {
   cardText.textContent = res.tweet;
   emotionsText.textContent = parseEmotions(res.result.emotions);
   criminalIntentText.textContent = parseCriminalIntent(res.result.hasCriminalIntent);
-  sentimentText.textContent = result.sentiments;
+  sentimentText.textContent = res.result.sentiments;
 
   if (res.result.hasCriminalIntent) {
     categoriesText.textContent = parseCriminalCategories(res.result.categories);
