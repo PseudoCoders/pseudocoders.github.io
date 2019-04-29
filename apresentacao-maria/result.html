@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>M.A.R.I.A</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M.A.R.I.A</title>
 
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/result.css" />
-  <link rel="stylesheet" href="css/particles.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/result.css" />
+    <link rel="stylesheet" href="css/particles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hgd4nsl.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="/maria/img/favicon.ico">
 </head>
+
 <body id="particles-js">
-  <div class="card text-white mb-3">
-    <div class="card-header">Tweet</div>
-    <div class="card-body">
-      <h5 class="card-title">Anônimo</h5>
-      <p class="card-text"></p>
-      <p class="card-text sentiment"></p>
-      <p class="card-text emotions"></p>
-      <p class="card-text criminalIntent"></p>
-      <p class="card-text categories"></p>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="centerButton">
+                <div class="update">
+                    <a onClick="history.go(0)">
+
+
+                        <button class="verify"><i class="fas fa-redo-alt"></i> Atualizar Página</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card text-white mb-3">
+            <div class="card-header">Tweet</div>
+            <div class="card-body">
+                <h5 class="card-title">Anônimo</h5>
+                <p class="card-text"></p>
+                <div class="card-header sentiment"></div>
+                <!-- <p class="card-text sentiment"></p> -->
+                <div class="card-header emotions"></div>
+                <!-- <p class="card-text emotions"></p> -->
+                <div class="card-header criminalIntent"></div>
+                <!-- <p class="card-text criminalIntent"></p> -->
+                <div class="card-header categories"></div>
+                <!-- <p class="card-text categories"></p> -->
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNjQ1NmQyNjQtOTI1Zi00NDQyLWE1YzUtMGM5OTQ3MDQ5NmRiIiwidCI6ImE3MGI2Y2YxLTI5NGQtNDI1MS05NDU2LWMwMWU1NjI0MDMyYiJ9">
+                <button class="verify">Dashboard - Verificar Registros</button>
+            </a>
+        </div>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/result.js"></script>
+
     </div>
-  </div>
-
-  <div class="registry">
-    <a href="https://app.powerbi.com/view?r=eyJrIjoiNjQ1NmQyNjQtOTI1Zi00NDQyLWE1YzUtMGM5OTQ3MDQ5NmRiIiwidCI6ImE3MGI2Y2YxLTI5NGQtNDI1MS05NDU2LWMwMWU1NjI0MDMyYiJ9">
-      <button class="verify">Verificar Registros</button>
-    </a>
-  </div>
-
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/particles.js"></script>
-  <script src="js/result.js"></script>
 </body>
+
 </html>

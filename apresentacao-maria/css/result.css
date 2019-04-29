@@ -1,31 +1,41 @@
+body {
+    font-family: code-saver, sans-serif !important;
+}
+
 .card {
-  margin-top: 16vh;
-  width: 100%;
-  position: absolute;
-  background-color: rgb(138, 43, 226, 0.3);
+    margin-top: 5vh;
+    /* width: 100%; */
+    /* position: absolute; */
+    background-color: rgb(138, 43, 226, 0.3);
 }
 
 .card-text {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .criminalIntent {
-  color: red;
-  font-weight: bold;
+    color: red;
+    font-weight: bold;
 }
 
-.registry {
-  position: absolute;
-  margin-top: 80vh;
-  margin-left: 27%;
+.update {
+    /* position: absolute; */
+    margin-top: 5%;
+    /* margin-left: 27%; */
 }
 
 .verify {
-  padding: 12px 20px;
-  font-size: 16px;
-  width: 100%;
-  background-color: rgb(138, 43, 226, 0.3);
-  border: 1px solid blueviolet;
-  color: white;
-  font-weight: bold;
+    /* padding: 12px 20px; */
+    font-size: 20px;
+    width: auto;
+    background-color: rgb(138, 43, 226, 0.3);
+    border: 1px solid #2a0e45;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.container {
+    margin: auto;
 }
