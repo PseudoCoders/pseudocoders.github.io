@@ -9,7 +9,7 @@ function parseCriminalCategories(categories) {
 }
 
 function parseEmotions(emotions) {
-    return emotions ? `Emoções encontradas: ${emotions.join('• ')}` : '';
+    return emotions ? `• Emoções encontradas: ${emotions.join('• ')}` : '';
 }
 
 function parseCriminalIntent(criminalIntent) {

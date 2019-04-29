@@ -1,28 +1,29 @@
 .wrapper {
-  width: 100%;
-  position: absolute;
-  text-align: center;
+    width: 100%;
+    position: absolute;
+    text-align: center;
 }
 
 h1 {
-  padding-top: 18vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18vw;
-  color: blueviolet;
+    padding-top: 18vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18vw;
+    color: #6b1591;
 }
 
 .analyze {
-  /* margin-top: 27vh; */
-  padding: 12px 20px;
-  font-size: 16px;
-  width: 80%;
-  background-color: blueviolet;
-  border: 1px solid blueviolet;
-  color: white;
-  font-weight: bold;
+    /* margin-top: 27vh; */
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 80%;
+    background-color: #6b1591;
+    margin: auto;
+    color: white;
+    border-color: #6b1591;
+    font-weight: bold;
 }
 
-.img{
-  margin-top: 5%;
-  margin-bottom: 5%;
+.img {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }

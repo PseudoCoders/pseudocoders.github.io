@@ -1,11 +1,12 @@
 body {
     font-family: code-saver, sans-serif !important;
+    margin: auto;
 }
 
 .card {
     margin-top: 5vh;
     /* width: 100%; */
-    /* position: absolute; */
+    /* position: relative; */
     background-color: rgb(138, 43, 226, 0.3);
 }
 
