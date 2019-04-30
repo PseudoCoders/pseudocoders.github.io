@@ -40,3 +40,19 @@ body {
 .container {
     margin: auto;
 }
+
+.tweet-text {
+    border-width: thin;
+    border-color: #ffffff;
+    border-style: solid;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.buttonPage{
+    padding-top: 5%;
+}
+
+.info{
+    color: #ffffff;
+}

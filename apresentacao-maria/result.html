@@ -32,22 +32,23 @@
 <body id="particles-js">
     <div class="container wrapper">
 
-        <div class="col-md-12">
-            <div class="centerButton">
-                <div class="update">
-                    <a onClick="history.go(0)">
-
-
-                        <button class="verify"><i class="fas fa-redo-alt"></i> Atualizar Página</button>
-                    </a>
-                </div>
+        <div class="row">
+            <div class="col-md buttonPage">
+                <a onClick="history.go(0)">
+                    <button class="verify"><i class="fas fa-redo-alt"></i> Atualizar</button>
+                </a>
+                <a href="http://bit.ly/2IScdWh"> <button class="verify"><i class="fas fa-chart-bar"></i>
+                        Dashboard</button></a>
             </div>
         </div>
+
         <div class="card text-white mb-3">
             <div class="card-header">Tweet</div>
             <div class="card-body">
                 <h5 class="card-title">Anônimo</h5>
-                <p class="card-text"></p>
+                <div class="tweet-text">
+                    <p class="card-text"></p>
+                </div>
                 <p class="card-text sentiment"></p>
                 <p class="card-text emotions"></p>
                 <p class="card-text criminalIntent"></p>
@@ -55,11 +56,10 @@
             </div>
         </div>
 
-        <div class="col-md-12">
-            <a
-                href="https://app.powerbi.com/view?r=eyJrIjoiNjQ1NmQyNjQtOTI1Zi00NDQyLWE1YzUtMGM5OTQ3MDQ5NmRiIiwidCI6ImE3MGI2Y2YxLTI5NGQtNDI1MS05NDU2LWMwMWU1NjI0MDMyYiJ9">
-                <button class="verify">Dashboard - Verificar Registros</button>
-            </a>
+        <div class="row col-md info">
+            <small><i class="fas fa-exclamation-triangle"></i><b> > Não nos responsabilizamos por quaisquer informações
+                    exibidas. Os dados obtidos são públicos e podem ser recuperados através da API do <a
+                        href="https://twitter.com">Twitter.</a></b></small>
         </div>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
