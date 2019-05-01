@@ -3,6 +3,7 @@ const emotionsText = document.querySelector('.emotions');
 const criminalIntentText = document.querySelector('.criminalIntent');
 const categoriesText = document.querySelector('.categories');
 const sentimentText = document.querySelector('.sentiment');
+const user = document.querySelector('.user');
 
 function parseCriminalCategories(categories) {
     return `• Intenção criminosa encontrada: ${categories.join(' • ')}`;
@@ -22,6 +23,10 @@ function parseSentiment(sentiment) {
     return sentiment ? `• Tweet contém: ${sentiment}` : '';
 }
 
+function fakeUser(user) {
+    return user = 'Usuário: Ocultado por questões de segurança.';
+}
+
 (async() => {
     const response = await axios.get('https://maria-ia.herokuapp.com/maria');
     const res = response.data;
@@ -31,6 +36,7 @@ function parseSentiment(sentiment) {
     emotionsText.textContent = parseEmotions(res.result.emotions);
     criminalIntentText.textContent = parseCriminalIntent(res.result.hasCriminalIntent);
     sentimentText.textContent = parseSentiment(res.result.sentiments);
+    user.textContent = fakeUser();
 
     if (res.result.hasCriminalIntent) {
         categoriesText.textContent = parseCriminalCategories(res.result.criminalCategories);
