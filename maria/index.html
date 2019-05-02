@@ -82,14 +82,14 @@
   <!--/ Nav Star /-->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-        
+
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      
+
       <a class="navbar-brand text-brand" href="index.html">Mar<span class="color-b">ia</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
@@ -450,14 +450,47 @@
   <!--/ Testimonials End /-->
 
   <!--/ footer Star /-->
-  <section class="section-footer">
+  <section class="section-footer" id="contato">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-4 col-md-6">
           <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand"> Fale com {PseudoCoders}</h3>
+            <div>
+              <br>
+              <br>
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand"> Fale com {PseudoCoders}</h3>
+              </div>
+
+              <form method="POST" action="https://formspree.io/pseudocodersti@gmail.com">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nome</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" name="name"
+                    placeholder="Ex.: PseudoCoders" required="true" autocomplete="false">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">E-mail</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
+                    placeholder="Ex.: pseudocodersti@gmail.com" autocomplete="false">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Assunto</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Ex.: Tecnologias usadas" required="true" autocomplete="false">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Envie sua mensagem</label>
+                  <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
+                    required="true" autocomplete="false"></textarea>
+                </div>
+                <input type="hidden" name="_language" value="pt-BR" />
+                <input type="hidden" name="_next" value="https://pseudocoders.github.io/maria/"/>
+                <button class="btn btn-success" type="submit">Enviar mensagem</button>
+              </form>
+
             </div>
+            <br>
+            <br>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <span class="color-text-a">Email <a href="mailto:pseudocodersti@gmail.com">
@@ -477,7 +510,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12" id="contato">
+        <div class="col-md-12">
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy;Copyright
