@@ -7,17 +7,17 @@ const user = document.querySelector('.user');
 const time = document.querySelector('.time');
 
 function parseCriminalCategories(categories) {
-    return `• Intenção criminosa encontrada: ${categories.join(' • ')}`;
+    return `• Intenção criminosa encontrada: ${categories.join(' ')}`;
 }
 
 function parseEmotions(emotions) {
-    if(emotions == 'raiva' 
+    if (emotions == 'raiva'
         || emotions == 'tristeza'
         || emotions == 'desgosto'
-        || emotions == 'medo'){
-            return emotions = `• Emoção encontrada: ${emotions.join('• ')}`;
-    }else{
-        return emotions = '• As emoções encontradas não se referem a Raiva, Tristeza, Desgosto ou Medo.';
+        || emotions == 'medo') {
+        return emotions = `• Emoção encontrada: ${emotions.join(' ')}`;
+    } else {
+        return emotions = '• As emoções encontradas não se referem a    Raiva, Tristeza, Desgosto ou Medo.';
     }
 }
 
@@ -35,15 +35,15 @@ function fakeUser(user) {
     return user = 'Usuário: Ocultado por questões de segurança.';
 }
 
-(async() => {
+(async () => {
     const response = await axios.get('https://maria-ia.herokuapp.com/maria');
     const res = response.data;
-
-    cardText.textContent = res.tweet;
+    cardText.textContent = res.text;
     emotionsText.textContent = parseEmotions(res.result.emotions);
     criminalIntentText.textContent = parseCriminalIntent(res.result.hasCriminalIntent);
     sentimentText.textContent = parseSentiment(res.result.sentiments);
     user.textContent = fakeUser();
+
 
     if (res.result.hasCriminalIntent) {
         categoriesText.textContent = parseCriminalCategories(res.result.criminalCategories);
