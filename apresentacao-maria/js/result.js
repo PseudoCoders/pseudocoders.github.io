@@ -17,7 +17,8 @@ function parseEmotions(emotions) {
         || emotions == 'medo') {
         return emotions = `• Emoção encontrada: ${emotions.join(' ')}`;
     } else {
-        return emotions = '• As emoções encontradas não se referem a    Raiva, Tristeza, Desgosto ou Medo.';
+        // return emotions = '• As emoções encontradas não se referem a Raiva, Tristeza, Desgosto ou Medo.';
+        return emotions = ' ';
     }
 }
 
