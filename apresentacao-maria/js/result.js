@@ -11,14 +11,8 @@ function parseCriminalCategories(categories) {
 }
 
 function parseEmotions(emotions) {
-    if (emotions == 'raiva'
-        || emotions == 'tristeza'
-        || emotions == 'desgosto'
-        || emotions == 'medo') {
+    if (emotions.length > 0) {
         return emotions = `• Emoção encontrada: ${emotions.join(' ')}`;
-    } else {
-        // return emotions = '• As emoções encontradas não se referem a Raiva, Tristeza, Desgosto ou Medo.';
-        return emotions = ' ';
     }
 }
 
@@ -39,10 +33,11 @@ function fakeUser(user) {
 (async () => {
     const response = await axios.get('https://maria-ia.herokuapp.com/maria');
     const res = response.data;
+    console.log(res)
     cardText.textContent = res.text;
     emotionsText.textContent = parseEmotions(res.result.emotions);
     criminalIntentText.textContent = parseCriminalIntent(res.result.hasCriminalIntent);
-    sentimentText.textContent = parseSentiment(res.result.sentiments);
+    sentimentText.textContent = parseSentiment(res.result.sentiment);
     user.textContent = fakeUser();
 
 
