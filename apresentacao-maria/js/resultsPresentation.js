@@ -10,7 +10,6 @@ const headers = {
     headers: { 'secret': 'PseudoCoders' }
 };
 
-
 function parseCriminalCategories(categories) {
     return `• Intenção criminosa encontrada: ${categories.join(' • ')}`;
 }

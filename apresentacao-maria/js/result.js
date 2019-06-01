@@ -6,6 +6,10 @@ const sentimentText = document.querySelector('.sentiment');
 const user = document.querySelector('.user');
 const time = document.querySelector('.time');
 
+const headers = {
+    headers: { 'secret': 'PseudoCoders' }
+};
+
 function parseCriminalCategories(categories) {
     return `• Intenção criminosa encontrada: ${categories.join(' ')}`;
 }
@@ -31,7 +35,7 @@ function fakeUser(user) {
 }
 
 (async () => {
-    const response = await axios.get('https://maria-ia.herokuapp.com/maria');
+    const response = await axios.get('https://maria-ia.herokuapp.com/maria', headers);
     const res = response.data;
     console.log(res)
     cardText.textContent = res.text;
