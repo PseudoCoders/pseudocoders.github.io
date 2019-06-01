@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apresentação</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/result.css" />
+    <link rel="stylesheet" href="css/particles.css" />
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hgd4nsl.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="/maria/img/favicon.ico">
+
+    <script src="js/pace.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139234671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139234671-1');
+    </script>
+
+</head>
+
+<body id="particles-js">
+    <div class="container wrapper">
+
+        <div class="row">
+            <div class="col-md buttonPage">
+                <a onClick="history.go(0)">
+                    <button class="verify"><i class="fas fa-redo-alt"></i> Atualizar</button>
+                </a>
+                <a href="https://bit.ly/2IScdWh"> <button class="verify"><i class="fas fa-chart-bar"></i>
+                        Dashboard</button></a>
+            </div>
+        </div>
+
+        <div class="card text-white mb-3">
+            <div class="card-header">Tweet</div>
+            <div class="card-body">  
+                <p class="user"></p>
+                <div class="tweet-text">
+                    <p class="card-text"></p>
+                </div>
+                <p class="card-text sentiment"></p>
+                <p class="card-text emotions"></p>
+                <p class="card-text criminalIntent"></p>
+                <p class="card-text categories"></p>
+            </div>
+        </div>
+
+        <div class="row col-md info">
+            <small><i class="fas fa-exclamation-triangle"></i><b> > Nossa Inteligência Artificial está em constante
+                    treinamento e por tal motivo algumas análises podem ser parcialmente ou totalmente equivocadas. </b></small>
+        </div>
+        <div class="row col-md info">
+            <small><i class="fas fa-exclamation-triangle"></i><b> > Não nos responsabilizamos por quaisquer informações
+                    exibidas. Os dados obtidos são públicos e podem ser recuperados através da API do <a
+                        href="https://twitter.com">Twitter.</a></b></small>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/resultsPresentation.js"></script>
+
+
+    </div>
+
+</body>
+
+</html>
