@@ -35,7 +35,7 @@ function fakeUser(user) {
 }
 
 (async () => {
-    const response = await axios.get('https://maria-ia.herokuapp.com/maria', headers);
+    const response = await axios.get('https://maria-ia.herokuapp.com/maria/withCriminalIntent', headers);
     const res = response.data;
     console.log(res)
     cardText.textContent = res.text;
