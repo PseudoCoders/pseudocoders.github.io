@@ -23,6 +23,18 @@ h1 {
     font-weight: bold;
 }
 
+.criminalIntent {
+    /* margin-top: 27vh; */
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 80%;
+    background-color: #6b1591;
+    margin: auto;
+    color: white;
+    border-color: #6b1591;
+    font-weight: bold;
+}
+
 .img {
     margin-top: 5%;
     margin-bottom: 5%;
