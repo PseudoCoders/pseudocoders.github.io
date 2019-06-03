@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Múltiplas Ações Realizadas com Inteligência Artificial, MARIA é uma ferramenta de verradura das redes sociais para análise de sentimentos em textos e informação a respeito de possíveis intenções criminosas ">
+    <meta name="description"
+        content="Múltiplas Ações Realizadas com Inteligência Artificial, MARIA é uma ferramenta de verradura das redes sociais para análise de sentimentos em textos e informação a respeito de possíveis intenções criminosas ">
     <meta name="author" content="PseudoCoders">
-    <meta name="keywords" content="HTML, CSS, JS, JavaScript, IBM, IBM Watson, Hackathon, PseudoCoders, Redes Sociais, Inteligência Artificial, Análise de Sentimentos, IA">
+    <meta name="keywords"
+        content="HTML, CSS, JS, JavaScript, IBM, IBM Watson, Hackathon, PseudoCoders, Redes Sociais, Inteligência Artificial, Análise de Sentimentos, IA">
 
     <!-- Theme Color para os navegadores Chrome, Firefox, Opera-->
     <meta name="theme-color" content="black">
@@ -25,6 +27,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/particles.css" />
     <link rel="icon" href="/maria/img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139234671-1"></script>
@@ -41,7 +44,16 @@
 <body id="particles-js">
     <div class="wrapper">
         <img class="img" src="/apresentacao-maria/img/maria_logo.jpg" alt="" width="35%" height="35%">
-        <button class="analyze">Analisar</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <button class="criminalIntent">Possíveis intenções criminosas</button>
+                </div>
+                <div class="col-sm">
+                    <button class="analyze">Analisados em tempo real</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
