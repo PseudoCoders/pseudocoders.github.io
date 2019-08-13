@@ -1,2 +1,2 @@
-# unighack.github.io
+# PseudoCoders
 Front end para o projeto do hackaton
