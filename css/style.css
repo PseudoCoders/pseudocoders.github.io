@@ -67,9 +67,9 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #fcfcfc;
+    color: #ffffff;
     text-align: left;
-    background-color: #363636;
+    background-color: #141A46;
 }
 
 [tabindex="-1"]:focus {
@@ -89,13 +89,13 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: .5rem;
-    color: #ffffff !important;
+    color: #ec4d37 !important;
 }
 
 h3 {
     margin-top: 0;
     margin-bottom: .5rem;
-    color: #29b11d !important;
+    color: #ec4d37 !important;
 }
 
 h3.pseudocoders {
@@ -6746,7 +6746,7 @@ button.bg-light:hover {
 }
 
 .bg-dark {
-    background-color: #00b11e!important
+    background-color: #1d1b1b!important
 }
 
 a.bg-dark:focus,
